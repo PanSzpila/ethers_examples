@@ -1,6 +1,6 @@
-const { ethers } = require("ethers");
+import { ethers } from "ethers";
+import { INFURA_ID } from "../restrictedData.js"
 
-const INFURA_ID = ''
 const provider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFURA_ID}`)
 
 const main = async () => {
